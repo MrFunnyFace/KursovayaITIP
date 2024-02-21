@@ -129,6 +129,7 @@
             label1.Dock = DockStyle.Fill;
             label1.FlatStyle = FlatStyle.Flat;
             label1.Font = new Font("Segoe UI Black", 10F, FontStyle.Bold);
+            label1.ForeColor = Color.OrangeRed;
             label1.Location = new Point(3, 0);
             label1.Name = "label1";
             label1.Size = new Size(294, 71);
@@ -142,6 +143,7 @@
             label2.Dock = DockStyle.Fill;
             label2.FlatStyle = FlatStyle.Flat;
             label2.Font = new Font("Segoe UI Black", 10F, FontStyle.Bold);
+            label2.ForeColor = Color.OrangeRed;
             label2.Location = new Point(3, 173);
             label2.Name = "label2";
             label2.Size = new Size(294, 35);
@@ -180,7 +182,7 @@
             AddObj.TabIndex = 4;
             AddObj.Text = "Создать";
             AddObj.UseVisualStyleBackColor = true;
-            AddObj.Click += button1_Click;
+            AddObj.Click += AddObj_Click;
             // 
             // ViewProperties
             // 
@@ -193,6 +195,7 @@
             ViewProperties.TabIndex = 5;
             ViewProperties.Text = "Показать свойства";
             ViewProperties.UseVisualStyleBackColor = true;
+            ViewProperties.Click += ViewProperties_Click;
             // 
             // RunMethod
             // 
@@ -205,6 +208,7 @@
             RunMethod.TabIndex = 6;
             RunMethod.Text = "Методы";
             RunMethod.UseVisualStyleBackColor = true;
+            RunMethod.Click += RunMethod_Click;
             // 
             // DelObj
             // 

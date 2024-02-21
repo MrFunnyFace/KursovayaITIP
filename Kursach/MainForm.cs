@@ -16,12 +16,24 @@ namespace Kursach
         public MainForm()
         {
             InitializeComponent();
-            Obj= new List<IKurs>();
+            Obj = new List<IKurs>();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ViewProperties_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void RunMethod_Click(object sender, EventArgs e)
+        {
+            MhetodForm mhetodForm = new MhetodForm();
+            mhetodForm.ShowDialog();
+        }
+
+        private void AddObj_Click(object sender, EventArgs e)
+        {
+            CreateForm createForm = new CreateForm();
+            createForm.ShowDialog();
         }
     }
 }

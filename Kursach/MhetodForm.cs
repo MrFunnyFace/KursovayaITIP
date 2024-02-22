@@ -22,30 +22,22 @@ namespace Kursach
         {
             InitializeComponent();
         }
-        //Тут будет нужен конструктор с параметрами
-        //Чтобы не дублировать код, через список инициализации он вызовет обычный конструктор
         public MhetodForm(List<Func<string>> lst) : this()
         {
-            //Делегаты сохраняются во внутреннем списке
             _delegates = lst;
-            //Имена методов заносятся в комбобокс
             foreach (var i in _delegates)
             {
                 comboBox1.Items.Add(i.Method.Name);
             }
         }
 
-        //Конпка всего одна, так что умное имя не нужно:)
-
         private void Run_Click(object sender, EventArgs e)
         {
             int index = comboBox1.SelectedIndex;
             if (index != -1)
             {
-                //Если выбран метод, то выполняется связанный с ним делегат и результат сохраняется
                 _result = _delegates[index]();
             }
-            //Форма закрывается
             Close();
         }
     }

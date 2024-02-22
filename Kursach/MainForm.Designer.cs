@@ -68,14 +68,16 @@
             // сохранитьToolStripMenuItem
             // 
             сохранитьToolStripMenuItem.Name = "сохранитьToolStripMenuItem";
-            сохранитьToolStripMenuItem.Size = new Size(200, 34);
+            сохранитьToolStripMenuItem.Size = new Size(270, 34);
             сохранитьToolStripMenuItem.Text = "Сохранить";
+            сохранитьToolStripMenuItem.Click += сохранитьToolStripMenuItem_Click;
             // 
             // загрузитьToolStripMenuItem
             // 
             загрузитьToolStripMenuItem.Name = "загрузитьToolStripMenuItem";
-            загрузитьToolStripMenuItem.Size = new Size(200, 34);
+            загрузитьToolStripMenuItem.Size = new Size(270, 34);
             загрузитьToolStripMenuItem.Text = "Загрузить";
+            загрузитьToolStripMenuItem.Click += загрузитьToolStripMenuItem_Click;
             // 
             // tableLayoutPanel1
             // 
@@ -222,6 +224,7 @@
             DelObj.TabIndex = 7;
             DelObj.Text = "Удалить";
             DelObj.UseVisualStyleBackColor = true;
+            DelObj.Click += DelObj_Click;
             // 
             // textBox1
             // 

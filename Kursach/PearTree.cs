@@ -6,7 +6,7 @@ namespace Kursach
     class PearTree : Tree, IKurs
     {
         public PearTree() : base() { }
-        public PearTree(int numFruits, bool hlth, double hght, int ag) : base(numFruits, hlth, hght, ag) { Name = "Груша"; }
+        public PearTree(string nme,int numFruits, bool hlth, double hght, int ag) : base(nme,numFruits, hlth, hght, ag) { Name = "Груша" + " - " + nme; ; }
         public override string harvest_fruits()//собрать урожай
         {
             if (NumberFruits == 0 || Health == false)

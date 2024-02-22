@@ -15,7 +15,7 @@ namespace Kursach
             else return "На дереве нету фруктов, что бы сделать сок";
         }
         public AppleTree() : base() { }
-        public AppleTree(int numFruits, bool hlth, double hght, int ag) : base(numFruits,hlth,hght,ag) { Name = "Яблоня"; }
+        public AppleTree(string nme,int numFruits, bool hlth, double hght, int ag) : base(nme, numFruits,hlth,hght,ag) { Name = "Яблоня" + " - " + nme; ; }
         public override string harvest_fruits()//собрать урожай
         {
             if (NumberFruits == 0 || Health == false)

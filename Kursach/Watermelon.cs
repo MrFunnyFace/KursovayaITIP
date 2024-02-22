@@ -10,14 +10,15 @@ namespace Kursach
     [Serializable]
     class Watermelon : IGrowable, IMakeJuice, IKurs
     {
+        public string Name { get; set; } = "Арбуз";
         public string MakeJuice()
         {
             if (_is)
             {
-                ;
-                return "Вы сорвали 2 яблока, и сделали себе фреш.";
+                _is=false;
+                return "Сок из арбуза освежает(вы срезали арбуз)";
             }
-            else return "На дереве нету фруктов, что бы сделать сок";
+            else return "Вырастите арбуз сначала";
         }
         string IGrowable.GetName()
         {

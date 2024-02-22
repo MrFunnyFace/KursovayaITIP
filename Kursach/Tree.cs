@@ -36,8 +36,8 @@ namespace Kursach
         public string Name{ get { return name; } set { name = value; } }
 
 
-        public Tree() { NumberFruits = 0; Health = false;Height = 0; Age = 0; } //конструктор объекта класса 
-        public Tree(int numFruits, bool hlth, double hght, int ag) //конструктор объекта класса с переменными
+        public Tree() {NumberFruits = 0; Health = false;Height = 0; Age = 0; } //конструктор объекта класса 
+        public Tree(string nme,int numFruits, bool hlth, double hght, int ag) //конструктор объекта класса с переменными
         {
             NumberFruits = numFruits;
             Health = hlth;
@@ -54,8 +54,8 @@ namespace Kursach
 
         public override string ToString()// перегрузка ToString для вывода свойств объекта
         {
-            string info = string.Format("Количество фруктов - {0,1}\nЗдоровье - {1}\nВысота - {2}\nВозраст - {3}\n", NumberFruits, Health ? "живое" : "мертвое", Height, Age);
-            return Name + "\n" + info;
+            string info = string.Format("Количество фруктов - {0,1} \nЗдоровье - {1} \nВысота - {2} \nВозраст - {3} \n", NumberFruits, Health ? "живое" : "мертвое", Height, Age);
+            return Name + " \n " + info;
         }
 
         public virtual string harvest_fruits()//собрать урожай

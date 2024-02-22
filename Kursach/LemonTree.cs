@@ -8,7 +8,7 @@ namespace Kursach
     {
         public LemonTree() : base() { }    
 
-        public LemonTree(int numFruits,bool hlth,double hght,int ag) : base(numFruits,hlth,hght,ag) { Name = "Лемонное дерево"; }
+        public LemonTree(string nme,int numFruits,bool hlth,double hght,int ag) : base(nme, numFruits,hlth,hght,ag) { Name = "Лемонное дерево" + " - " + nme; ; }
 
         public override string harvest_fruits()//собрать урожай
         {

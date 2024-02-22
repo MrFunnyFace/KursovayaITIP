@@ -48,6 +48,7 @@
             Run.TabIndex = 1;
             Run.Text = "Выполнить";
             Run.UseVisualStyleBackColor = true;
+            Run.Click += Run_Click;
             // 
             // MhetodForm
             // 

@@ -156,6 +156,7 @@
             comboBox1.Dock = DockStyle.Fill;
             comboBox1.Font = new Font("Segoe UI", 9F);
             comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Лимонное дерево", "Яблоня", "Груша", "Апельсиновое дерево", "Арбуз" });
             comboBox1.Location = new Point(3, 74);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(294, 33);
